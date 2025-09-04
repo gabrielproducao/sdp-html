@@ -1,0 +1,103 @@
+/* Estilos para as páginas internas */
+
+.page-hero {
+  background: #2d333b; /* Fundo escuro */
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #fff; /* Título em branco */
+}
+
+.page-hero p {
+  font-size: 1.2rem;
+  color: #ccc; /* Texto mais claro */
+}
+
+.page-content {
+  padding: 3rem 0;
+  background: #22272e; /* Fundo principal escuro */
+}
+
+.section-block {
+  margin-bottom: 3rem;
+}
+
+.section-block h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff; /* Título em branco */
+  border-left: 4px solid var(--primary); /* Mantém a cor de destaque primária */
+  padding-left: 1rem;
+}
+
+.section-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-block li {
+  background: #1e2228; /* Fundo da lista mais escuro */
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: #ccc; /* Texto da lista mais claro */
+}
+
+/* Estilos para cards de projetos e depoimentos */
+.project-grid, .testimonial-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-card, .testimonial-card {
+  background: #1e2228; /* Fundo dos cards mais escuro */
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra mais visível no tema escuro */
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  color: #fff; /* Título do projeto em branco */
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #ccc; /* Texto do depoimento mais claro */
+  margin-bottom: 1rem;
+}
+
+.testimonial-card h4 {
+  font-weight: 600;
+  color: #fff; /* Nome do autor em branco */
+}
+
+.contact.page {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.contact.page a {
+  margin-top: 1rem;
+}
+
+/* Marcação do item atual no menu */
+.nav a.current {
+  font-weight: bold;
+  color: var(--primary); /* Mantém a cor primária para destaque */
+  border-bottom: 2px solid var(--primary);
+}
