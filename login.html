@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Entrar - SeuSite</title>
+  <meta name="description" content="Acesse sua conta na SeuSite e gerencie seus projetos." />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+        <img src="assets/logo.png" alt="SeuSite logo">
+        <span>Soluções DP</span>
+      </div>
+     <nav class="nav">
+  <a href="index.html#inicio">Início</a>
+  <a href="index.html#servicos">Serviços</a>
+  <a href="index.html#sobre">Sobre</a>
+  <a href="index.html#contato" class="cta">Contato</a>
+</nav>
+      <a href="login.html" class="login-btn">
+  <img src="assets/user.svg" alt="Entrar">
+  <span>Entrar</span>
+</a>
+    </div>
+  </header>
+
+  <main class="login-container">
+    <div class="login-box">
+      <h2>Entre na sua conta</h2>
+
+      <div class="social-login-buttons">
+        <a href="#" class="social-btn facebook" id="loginFacebookBtn"><i class="fab fa-facebook-f"></i> Login via Facebook</a>
+        <a href="#" class="social-btn google" id="loginGoogleBtn"><i class="fab fa-google"></i> Login via Google</a>
+        <a href="#" class="social-btn yahoo" id="loginYahooBtn"><i class="fab fa-yahoo"></i> Login via Yahoo</a>
+        <a href="#" class="social-btn linkedin" id="loginLinkedInBtn"><i class="fab fa-linkedin-in"></i> Login via LinkedIn</a>
+      </div>
+
+      <div class="separator">ou</div>
+
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Seu e-mail" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Senha</label>
+          <div class="password-field">
+            <input type="password" id="password" placeholder="Sua senha" required>
+            <i class="fas fa-eye-slash toggle-password"></i>
+          </div>
+        </div>
+        <button type="submit" class="button-black">Entrar</button>
+      </form>
+
+      <a href="#" class="forgot-password" id="forgotPasswordLink">Esqueceu a senha?</a>
+
+      <div class="register-link">
+        Não tem uma conta? <a href="#" id="createAccountLink">Criar conta</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> SeuSite. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511945526452" target="_blank" class="whatsapp-float" rel="noopener">
+    <img src="assets/whatsapp.svg" alt="WhatsApp">
+  </a>
+
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content" id="popupContent">
+      <span class="close-popup" id="closePopup">&times;</span>
+      <h3 id="popupTitle"></h3>
+      <p id="popupText"></p>
+    </div>
+  </div>
+
+  <script src="style.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
