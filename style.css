@@ -1,0 +1,307 @@
+:root {
+  --primary: #58a6ff; /* Azul mais claro para contraste */
+  --accent: #4183d7;
+  --text: #e6e6e6; /* Cor de texto claro */
+  --bg: #22272e; /* Fundo cinza escuro */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  background: #2d333b; /* Fundo do cabeçalho mais escuro que o body */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.brand img {
+  height: 50px;
+  margin-right: 0.5rem;
+}
+
+.brand span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* Logo em branco */
+}
+
+.nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.nav a.cta {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  margin-left: 2rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  background: #2d333b; /* Cor de fundo da seção de destaque */
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff; /* Título em branco */
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.button-primary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hero-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.services {
+  padding: 3rem 0;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #fff; /* Título em branco */
+}
+
+.service-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.service-btn {
+  background: #1e2228; /* Fundo do botão mais escuro */
+  color: #fff;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.service-btn:hover {
+  background: #2d333b;
+}
+
+.about {
+  background: #2d333b; /* Fundo da seção sobre */
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff; /* Título em branco */
+}
+
+.contact {
+  padding: 3rem 0;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff; /* Título em branco */
+}
+
+#contactForm {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #444; /* Borda mais escura */
+  border-radius: 4px;
+  background: #1e2228;
+  color: var(--text);
+}
+
+#contactForm button {
+  padding: 0.8rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.feedback {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--primary); /* Cor do feedback */
+}
+
+.footer {
+  background: #2d333b; /* Fundo do rodapé */
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #aaa; /* Cor mais clara para o texto */
+}
+
+/* Botão WhatsApp flutuante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 200;
+}
+.whatsapp-float img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Botão Entrar */
+.login-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff; /* Cor do texto em branco */
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.login-btn img {
+  width: 20px;
+  height: 20px;
+  filter: invert(1); /* Inverte a cor do ícone para branco */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image {
+    margin-top: 2rem;
+  }
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* --- Melhorias na seção Sobre Nós --- */
+
+.about {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.about-intro {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-card {
+  background: #1e2228; /* Fundo dos cartões */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.about-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.about-card p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
