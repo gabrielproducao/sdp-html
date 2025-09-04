@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>#gabrielproduções-Soluções Digitais</title>
+  <meta name="description" content="SeuSite — Inovação tecnológica e soluções digitais." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+        <img src="assets/logo.png" alt="SeuSite logo">
+        <span>Soluções DP</span>
+      </div>
+     <nav class="nav">
+  <a href="index.html#inicio">Início</a>
+  <a href="index.html#servicos">Serviços</a>
+  <a href="index.html#sobre">Sobre</a>
+  <a href="index.html#contato" class="cta">Contato</a>
+</nav>
+      <a href="login.html" class="login-btn">
+  <img src="assets/user.svg" alt="Entrar">
+  <span>Entrar</span>
+</a>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Soluções Digitais Personalizadas</h1>
+      <p>Criamos websites, apps e estratégias online com foco no seu sucesso.</p>
+      <button class="button-primary">Saiba Mais</button>
+    </div>
+    <div class="hero-image">
+      <img src="assets/hero-placeholder.jpg" alt="Imagem de destaque">
+    </div>
+  </section>
+
+  <section id="servicos" class="services">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="service-list">
+        <a href="web.html" class="service-btn">Desenvolvimento Web</a>
+        <a href="apps.html" class="service-btn">Apps Mobile</a>
+        <a href="marketing.html" class="service-btn">Marketing Digital</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p class="about-intro">Somos a SeuSite, uma equipe de especialistas apaixonada por tecnologia e inovação digital. Desde 2020, nosso propósito é transformar ideias em realidade e impulsionar negócios através de soluções web e mobile.</p>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Nossa Missão</h3>
+          <p>Entregar soluções digitais de alta qualidade que geram valor real para nossos clientes, combinando design intuitivo, tecnologia robusta e uma experiência de usuário excepcional.</p>
+        </div>
+        <div class="about-card">
+          <h3>Nossa Visão</h3>
+          <p>Ser referência em inovação tecnológica, reconhecida pela excelência em nossos projetos e pelo compromisso em construir parcerias duradouras baseadas em confiança e resultados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <div id="contactForm">
+        <input type="text" id="name" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu e-mail" required>
+        <textarea id="message" placeholder="Sua mensagem" required></textarea>
+        <button type="submit" onclick="sendToWhatsApp()">Enviar</button>
+      </div>
+      <div id="formFeedback" class="feedback"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> SeuSite. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511945526452" target="_blank" class="whatsapp-float" rel="noopener">
+    <img src="assets/whatsapp.svg" alt="WhatsApp">
+  </a>
+
+  <script src="style.js"></script>
+</body>
+</html>
